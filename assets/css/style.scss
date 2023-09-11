@@ -7,6 +7,37 @@ html, body {
     font-weight: 400;
 }
 
+
+.btn-yellow {
+    background-color: #F9D783;
+    border: 1px solid #F9D783;
+    color:#191919;
+    text-decoration: none;
+    padding: 8px 25px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 25px;
+
+    i {
+        margin-left: 8px;
+        font-size: 0.9em;
+    }
+
+    &:hover {
+        background-color: #191919;
+        border: 1px solid #191919;
+        color: #F0EFE9;
+        text-decoration: none;
+    }
+
+}
+    
+
+
+
+
+
+
 header {
     background-color: #F0EFE9;
     padding: 16px;
@@ -44,14 +75,23 @@ header {
 
             .top-menu {
                 display: flex;
-                justify-content: space-between;
+                justify-content: flex-end;
+                align-items: center;
                 border-bottom: 1px solid #DAD9D3;
-                padding-bottom: 15px;                
+                padding-bottom: 12px;  
+                
+                @media (min-width: 1200px) {
+                    justify-content: space-between;
+                }
             
                 .contact-information {
+                    display: none;
+                    align-items: center;
+
+
+                    @media (min-width: 1200px) {
                     display: flex;
-                    
-                    
+                    }
 
                     .contact-box {
                         padding-right: 30px;
@@ -64,7 +104,7 @@ header {
                         i {
                             margin-right: 5px; 
                             font-size: 1.2em;
-                            color: #666666;
+                           
                         }
 
                         &.last {
@@ -75,6 +115,8 @@ header {
                 }
 
                 .social-media {
+
+                    
                     
                     a{
                         color: #191919;
@@ -82,14 +124,53 @@ header {
                         margin-left: 12px;
 
                         &:hover {
-                            color: #666666;
+                            color: #929292;
                         }
                     }
 
                 }
             }
                 
+            .bottom-menu {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 30px;
 
+                nav {
+
+                    a {
+                        display: inline-block;
+                        color: #191919;
+                        text-decoration: none;
+                        margin-right: 35px;
+                        position: relative;
+
+                        &.active {
+                            font-weight: 500;
+                        }
+                        
+                        &.active::after,
+                        &:hover::after {
+                            content: '';
+                            position: absolute;
+                            font-weight: 500;
+                            height: 2px;
+                            width: 15px;
+                            background-color: #191919;
+                            left: 50%;
+                            bottom: -3px;
+                            transform: translate((calc(50% - 15px)));
+
+                        }
+
+                    
+                       
+                         
+                          
+                    }
+                }
+            }
 
             @media (min-width: 2500px) {
                 max-width: 2048px;
