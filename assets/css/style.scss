@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap');
+
 
 html, body {
     color: #191919;
@@ -13,7 +15,32 @@ html, body {
     border: 1px solid #F9D783;
     color:#191919;
     text-decoration: none;
-    padding: 8px 25px;
+    padding: 15px 25px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 25px;
+
+    i {
+        margin-left: 8px;
+        font-size: 0.9em;
+    }
+
+    &:hover {
+        background-color: #191919;
+        border: 1px solid #191919;
+        color: #F0EFE9;
+        text-decoration: none;
+    }
+
+}
+
+
+.btn-transparent {
+    background-color: transparent;
+    border: 1px solid #191919;
+    color:#191919;
+    text-decoration: none;
+    padding: 15px 25px;
     font-weight: 600;
     font-size: 16px;
     border-radius: 25px;
@@ -32,15 +59,9 @@ html, body {
 
 }
     
-
-
-
-
-
-
 header {
     background-color: #F0EFE9;
-    padding: 16px;
+    padding: 10px;
 
 
     .container {
@@ -71,14 +92,14 @@ header {
                 display: block;
             } 
 
-
+           
 
             .top-menu {
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
                 border-bottom: 1px solid #DAD9D3;
-                padding-bottom: 12px;  
+                padding-bottom: 10px;  
                 
                 @media (min-width: 1200px) {
                     justify-content: space-between;
@@ -94,48 +115,67 @@ header {
                     }
 
                     .contact-box {
-                        padding-right: 30px;
-                        margin-right: 30px;
+                        display: none;
+                        padding-right: 20px;
+                        margin-right: 20px;
                         border-right: 1px solid #DAD9D3;
                         font-family: 'Inter', sans-serif;
                         font-size: 15px;
                         font-weight: 300;
 
+                        @media (min-width: 1024px) {
+                            display: block;
+                        }
+                            
+
                         i {
+                            
                             margin-right: 5px; 
                             font-size: 1.2em;
-                           
                         }
+
+                        
 
                         &.last {
                             border: none;
                         }
+                            
                     }
-
                 }
+                           
+
 
                 .social-media {
+                    display: none;
 
-                    
+                    @media (min-width: 700px) {
+                        display: inline-block;
+                    }
                     
                     a{
+                        
                         color: #191919;
                         font-size: 1.2rem;
                         margin-left: 12px;
+
+                      
 
                         &:hover {
                             color: #929292;
                         }
                     }
-
                 }
             }
+        }             
+
+                  
+                    
                 
             .bottom-menu {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding-top: 30px;
+                padding-top: 10px;
 
                 nav {
 
@@ -163,19 +203,114 @@ header {
                             transform: translate((calc(50% - 15px)));
 
                         }
+                    }
+                }
+
+                .btn-login {
+                    padding: 8px 25px;
+                }
+            }
+        
+    }
+}
+
+
+
+.showcase {
+    background-color: #F0EFE9;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .content {
+            padding-top: 40px;
+            padding-bottom: 40px;
+           
+           
+
+            h1 {
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
+                font-size: 40px;
+                text-align: center;
+                
+                
+                @media (min-width: 768px) {
+                    font-size: 70px;
+                    text-align: left;
+                }
+                
+                    @media (min-width: 1400px) {
+                    font-size: 86px;
+                    text-align: left;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                text-align: center;
+                padding-top: 35px;
+                padding-bottom: 35px;
+                padding-left: 10px;
+                padding-right: 10px;
+
+                @media (min-width: 768px) {
+                    font-size: 20px;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+
+                @media (min-width: 800px) {
+                    margin-right: 20px;
+                    text-align: left;
+                }
+
+            }
+
+            a {
+                margin-right: 0px;
+                display: block;
+                margin-bottom: 20px;
+                text-align: center;
+
+                @media (min-width: 768px) {
+                    margin-right: 10px;
+                    display: inline-block;
+                }
+
+             
+            }
+        }
+                
+            img {
+                display: none;
+                margin-right: -50px;
+        
+
+                @media (min-width: 1200px) {
+                display: block;
+                }
+            }
+    }
+}
+    
+            
+                
+               
+        
+
+            
 
                     
                        
                          
                           
-                    }
-                }
-            }
 
-            @media (min-width: 2500px) {
-                max-width: 2048px;
-            }
-        }
-    }
 
-}
+
+
+
+          
+
+
