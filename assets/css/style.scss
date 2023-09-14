@@ -9,7 +9,6 @@ html, body {
     font-weight: 400;
 }
 
-
 .btn-yellow {
     background-color: #F9D783;
     border: 1px solid #F9D783;
@@ -33,7 +32,6 @@ html, body {
     }
 
 }
-
 
 .btn-transparent {
     background-color: transparent;
@@ -214,8 +212,6 @@ header {
     }
 }
 
-
-
 .showcase {
     background-color: #F0EFE9;
     .container {
@@ -345,7 +341,149 @@ header {
         }
     }
 }
+
+.features {
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+        
+        .content-left {
+            
+            p {
+                font-family: 'Inter', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                color: #F94D1C;
+                margin-left: 100px;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
+                font-size: 45px;
+                margin-left: 100px;
+                margin-bottom: 50px;
+                margin-right: 150px;
+            }
+
+            a {
+                margin-left: 100px;
+            }
+        }
+
+    
+        .content-right {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px 130px;
+            margin-right: 130px;
+            padding-top: 150px;
+            
+           
+            
+            .business-advice {
+
+                i {
+                    margin-bottom: 30px;
+                    font-size: 20px;
+                }
+
+                h3 {
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 22px;
+                    font-weight: 700;
+                }
+
+                p {
+                    font-family: 'Inter', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+                    
+            }
+            .startup-business {
+
+                i {
+                    margin-bottom: 30px;
+                    font-size: 20px;
+                }
+
+                h3 {
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 22px;
+                    font-weight: 700;
+                }
+
+                p {
+                    font-family: 'Inter', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+
+            }
+            .financial-advice {
+
+                i {
+                    margin-bottom: 30px;
+                    font-size: 20px;
+                }
+
+                h3 {
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 22px;
+                    font-weight: 700;
+                }
+
+                p {
+                    font-family: 'Inter', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+            .risk-management {
+
+                i {
+                    margin-bottom: 30px;
+                    font-size: 20px;
+                }
+
+                h3 {
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 22px;
+                    font-weight: 700;
+                }
+
+                p {
+                    font-family: 'Inter', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+
+    
+
                 
+    
+           
+       
+        
+    
+            
+      
+            
+
+                
+
+
                 
         
 
