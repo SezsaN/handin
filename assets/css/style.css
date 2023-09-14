@@ -28,6 +28,27 @@ html, body {
   text-decoration: none;
 }
 
+.btn-black {
+  background-color: #000000;
+  border: 1px solid #000000;
+  color: #F0EFE9;
+  text-decoration: none;
+  padding: 15px 25px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 25px;
+}
+.btn-black i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+.btn-black:hover {
+  background-color: #F0EFE9;
+  border: 1px solid #F0EFE9;
+  color: #191919;
+  text-decoration: none;
+}
+
 .btn-transparent {
   background-color: transparent;
   border: 1px solid #191919;
@@ -46,7 +67,6 @@ html, body {
   background-color: #191919;
   border: 1px solid #191919;
   color: #F0EFE9;
-  text-decoration: none;
 }
 
 header {
@@ -261,8 +281,8 @@ header .container .bottom-menu .btn-login {
 }
 @media (min-width: 768px) {
   .brands .brand-row .content {
-    padding-top: 110px;
-    padding-bottom: 100px;
+    padding-top: 170px;
+    padding-bottom: 80px;
   }
 }
 .brands .brand-row .content img {
@@ -406,4 +426,40 @@ header .container .bottom-menu .btn-login {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
+}
+
+.about-company .container {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  margin-top: 200px;
+}
+.about-company .container .content-left img {
+  height: 600px;
+  width: 500px;
+  margin-left: 130px;
+}
+.about-company .container .content-right {
+  margin-left: 180px;
+}
+.about-company .container .content-right .title {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #F94D1C;
+  margin-bottom: 20px;
+}
+.about-company .container .content-right h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+}
+.about-company .container .content-right .first-p {
+  line-height: 1.8;
+}
+.about-company .container .content-right .second-p {
+  line-height: 1.8;
+  margin-bottom: 120px;
 }
