@@ -119,6 +119,13 @@ html, body {
   background-color: #191919;
 }
 
+.stars {
+  height: 12px;
+  width: 12px;
+  background-color: #F94D1C;
+  display: inline-block;
+}
+
 .section-title p {
   color: #F94D1C;
   font-family: "Inter", sans-serif;
@@ -976,6 +983,9 @@ header .container .bottom-menu .btn-login {
 .meet-our-team {
   background-color: #F0D082;
 }
+.meet-our-team .container {
+  border-bottom: 1px solid #C2AA70;
+}
 .meet-our-team .container .section-title p {
   padding-top: 120px;
 }
@@ -994,7 +1004,7 @@ header .container .bottom-menu .btn-login {
 }
 .meet-our-team .container .members {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
 .meet-our-team .container .members img {
@@ -1020,7 +1030,71 @@ header .container .bottom-menu .btn-login {
   align-items: center;
   text-decoration: none;
   padding-top: 30px;
+  padding-bottom: 70px;
 }
 .meet-our-team .container .dot {
   margin: 7px;
+}
+
+.our-clients {
+  background-color: #F0D082;
+  position: relative;
+  z-index: 0;
+}
+.our-clients .box {
+  width: 1520px;
+  height: 887px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 240px;
+  top: 65px;
+  z-index: -1;
+}
+.our-clients .container .section-title {
+  text-align: center;
+}
+.our-clients .container .section-title p {
+  padding-top: 120px;
+}
+.our-clients .container .section-title h2 {
+  padding-bottom: 90px;
+}
+.our-clients .container .client-reactions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 70px;
+}
+.our-clients .container .client-reactions span {
+  color: #F94D1C;
+  height: 5px;
+  width: 5px;
+  margin: 7px;
+  padding-bottom: 30px;
+}
+.our-clients .container .client-reactions p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.our-clients .container .client-reactions h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 92px;
+}
+.our-clients .container .client-reactions .positions {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: -5px;
+  color: #F94D1C;
+  margin-left: 92px;
+}
+.our-clients .container .client-reactions img {
+  margin-top: -140px;
+}
+.our-clients .container .center-content {
+  margin-top: 70px;
+  padding-bottom: 240px;
 }
