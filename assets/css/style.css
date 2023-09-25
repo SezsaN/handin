@@ -1179,3 +1179,74 @@ header .container .bottom-menu .btn-login {
 .news-and-updates .container .updates form a {
   margin-left: 20px;
 }
+
+.crito-footer-top {
+  background-color: #0E1021;
+  border-bottom: 1px solid #262737;
+  position: relative;
+  z-index: 0;
+}
+.crito-footer-top .footer-line {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.crito-footer-top .container .content-top {
+  padding-top: 110px;
+  padding-bottom: 90px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.crito-footer-top .container .content-top img {
+  padding-bottom: 30px;
+  padding-right: 260px;
+}
+.crito-footer-top .container .content-top p {
+  color: #A1A2A8;
+  margin-right: 100px;
+}
+.crito-footer-top .container .content-top h3 {
+  color: #ffffff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  margin-left: 50px;
+}
+.crito-footer-top .container .content-top a {
+  display: block;
+  color: #A1A2A8;
+  text-decoration: none;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+.crito-footer-top .container .content-top a:hover {
+  color: #DAD9D3;
+  border: none;
+  text-decoration: none;
+}
+
+.crito-footer-bottom {
+  background-color: #0E1021;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.crito-footer-bottom .container .content-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.crito-footer-bottom .container .content-bottom p {
+  color: #A1A2A8;
+}
+.crito-footer-bottom .container .content-bottom a {
+  color: #A1A2A8;
+  margin: 10px;
+}
+.crito-footer-bottom .container .content-bottom a:hover {
+  color: #DAD9D3;
+}
