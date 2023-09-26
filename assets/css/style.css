@@ -397,21 +397,20 @@ header .container .bottom-menu .btn-login {
   }
 }
 
-.features {
-  position: relative;
-  z-index: 0;
-}
 .features img {
   position: absolute;
   z-index: -1;
-  right: 0;
-  top: 80px;
-  right: 100px;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  height: 110%;
 }
 .features .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 0;
 }
 .features .container .content-left p {
   font-family: "Inter", sans-serif;
@@ -533,7 +532,7 @@ header .container .bottom-menu .btn-login {
   display: flex;
   justify-content: space-between;
   justify-content: center;
-  margin-top: 200px;
+  margin-top: 120px;
 }
 .about-company .container .content-left {
   position: relative;
@@ -841,13 +840,9 @@ header .container .bottom-menu .btn-login {
   margin-left: 5px;
 }
 
-.why-choose-us {
-  position: relative;
-  z-index: 0;
-}
 .why-choose-us img {
   position: absolute;
-  right: 290px;
+  right: 0;
   top: 45px;
   z-index: 1;
 }
@@ -856,9 +851,13 @@ header .container .bottom-menu .btn-login {
   height: 380px;
   background-color: #F0EFE9;
   position: absolute;
-  right: 0;
+  right: -18.2rem;
   bottom: 0;
   z-index: -1;
+}
+.why-choose-us .container {
+  position: relative;
+  z-index: 0;
 }
 .why-choose-us .container .content-left .title-text .title {
   font-family: "Inter", sans-serif;
@@ -1040,15 +1039,19 @@ header .container .bottom-menu .btn-login {
   background-color: #F0D082;
   position: relative;
   z-index: 0;
+  padding-bottom: 13rem;
 }
 .our-clients .box {
-  width: 1520px;
-  height: 887px;
+  width: 110%;
+  height: 110%;
   background-color: #ffffff;
   position: absolute;
-  left: 240px;
-  top: 65px;
+  top: 8%;
+  left: -5%;
   z-index: -1;
+}
+.our-clients .container {
+  position: relative;
 }
 .our-clients .container .section-title {
   text-align: center;
@@ -1096,16 +1099,6 @@ header .container .bottom-menu .btn-login {
 }
 .our-clients .container .center-content {
   margin-top: 70px;
-  padding-bottom: 240px;
-}
-.article-and-news {
-  position: relative;
-  z-index: 0;
-}
-.article-and-news .date {
-  position: absolute;
-  top: 292px;
-  left: 315px;
 }
 .article-and-news .container .section-title p {
   padding-top: 120px;
@@ -1121,7 +1114,10 @@ header .container .bottom-menu .btn-login {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
-.article-and-news .container .content img {
+.article-and-news .container .content .first-section {
+  position: relative;
+}
+.article-and-news .container .content .pic {
   width: 100%;
   height: auto;
   padding-bottom: 20px;
@@ -1355,18 +1351,18 @@ header .container .bottom-menu .btn-login {
   height: 206px;
 }
 
-.message-us {
-  position: relative;
-  z-index: 0;
-}
 .message-us .box {
-  width: 1310px;
-  height: 766px;
+  width: 100%;
+  height: 100%;
   background-color: #F0EFE9;
   position: absolute;
   z-index: -1;
   top: 72px;
-  left: 300px;
+  left: 0;
+}
+.message-us .container {
+  position: relative;
+  z-index: 0;
 }
 .message-us .container .title {
   text-align: center;
@@ -1411,6 +1407,7 @@ header .container .bottom-menu .btn-login {
   margin-left: 130px;
 }
 
-.map {
+.map iframe {
   padding-top: 180px;
+  width: 100%;
 }
