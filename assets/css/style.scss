@@ -268,6 +268,15 @@ header {
                         &.last {
                             border: none;
                         }
+
+                        a {
+                            text-decoration: none;
+                            color: #191919;
+
+                            &:hover {
+                                color: #929292;
+                            }
+                        }
                             
                     }
                 }
@@ -525,7 +534,7 @@ header {
                     color: #F94D1C;
                     // margin-left: 100px;
                     margin-bottom: 20px;
-                    margin-top: 40px;
+                    margin-top: 90px;
                     text-align: center;
 
                     @media (min-width: 768px) {
@@ -575,7 +584,7 @@ header {
                     font-weight: 600;
                     font-size: 16px;
                     border-radius: 25px;
-                    margin-left: 140px;
+                    margin-left: 180px;
 
 
                     @media (min-width: 768px) {
@@ -1195,50 +1204,61 @@ header {
 }
 
 .why-choose-us {
-
-
-    img {
-        display: none;
-        position: absolute;
-        right: 0;
-        top: 45px;
-        z-index: 1;
-
-        @media (min-width: 768px) {
-            display: block;
-            height: 30%;
-            width: 30%;
-        }
-
-        @media (min-width: 1200px) {
-            display: block;
-            height: auto;
-            width: auto;
-        }
-    }
-
-    .box {
-        display: none;
-        width: 1057px;
-        height: 380px;
-        background-color: #F0EFE9;
-        position: absolute;
-        right: -18.2rem;
-        bottom: 0;
-        z-index: -1;
-
-
-
-        @media (min-width: 1400px) {
-            display: block;
-           
-        }
+    position: relative;
+    z-index: 0;
+    .box 
         
+        
+    img {
+    display: none;
+    background-color: #F0EFE9;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 56%;
+    height: 63%;
+
+
+
+    @media (min-width: 1400px) {
+        display: block;
+
+       
     }
-    
+}
+
+
+
+
     .container {
         position: relative;
         z-index: 0;
+
+        img {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 45px;
+            z-index: 1;
+    
+            @media (min-width: 768px) {
+                display: block;
+                height: 30%;
+                width: 30%;
+            }
+    
+            @media (min-width: 1200px) {
+                display: block;
+                height: auto;
+                width: auto;
+            }
+        }
+    
+
+
+    
+            
         .content-left {
             
             .title-text {
@@ -1803,7 +1823,7 @@ header {
             grid-template-columns: 1fr;
 
             @media (min-width: 768px) {
-                grid-template-columns: repeat(1, 1fr);
+                grid-template-columns: repeat(2, 1fr);
             }
 
             @media (min-width: 1200px) {

@@ -222,6 +222,13 @@ header .container .menu .top-menu .contact-information .contact-box i {
 header .container .menu .top-menu .contact-information .contact-box.last {
   border: none;
 }
+header .container .menu .top-menu .contact-information .contact-box a {
+  text-decoration: none;
+  color: #191919;
+}
+header .container .menu .top-menu .contact-information .contact-box a:hover {
+  color: #929292;
+}
 header .container .menu .top-menu .social-media {
   display: none;
 }
@@ -424,7 +431,7 @@ header .container .bottom-menu .btn-login {
   font-weight: 400;
   color: #F94D1C;
   margin-bottom: 20px;
-  margin-top: 40px;
+  margin-top: 90px;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -465,7 +472,7 @@ header .container .bottom-menu .btn-login {
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
-  margin-left: 140px;
+  margin-left: 180px;
 }
 @media (min-width: 768px) {
   .features .container .content-left .left-title a {
@@ -929,7 +936,30 @@ header .container .bottom-menu .btn-login {
   margin-left: 5px;
 }
 
-.why-choose-us img {
+.why-choose-us {
+  position: relative;
+  z-index: 0;
+}
+.why-choose-us .box img {
+  display: none;
+  background-color: #F0EFE9;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 56%;
+  height: 63%;
+}
+@media (min-width: 1400px) {
+  .why-choose-us .box img {
+    display: block;
+  }
+}
+.why-choose-us .container {
+  position: relative;
+  z-index: 0;
+}
+.why-choose-us .container img {
   display: none;
   position: absolute;
   right: 0;
@@ -937,37 +967,18 @@ header .container .bottom-menu .btn-login {
   z-index: 1;
 }
 @media (min-width: 768px) {
-  .why-choose-us img {
+  .why-choose-us .container img {
     display: block;
     height: 30%;
     width: 30%;
   }
 }
 @media (min-width: 1200px) {
-  .why-choose-us img {
+  .why-choose-us .container img {
     display: block;
     height: auto;
     width: auto;
   }
-}
-.why-choose-us .box {
-  display: none;
-  width: 1057px;
-  height: 380px;
-  background-color: #F0EFE9;
-  position: absolute;
-  right: -18.2rem;
-  bottom: 0;
-  z-index: -1;
-}
-@media (min-width: 1400px) {
-  .why-choose-us .box {
-    display: block;
-  }
-}
-.why-choose-us .container {
-  position: relative;
-  z-index: 0;
 }
 .why-choose-us .container .content-left .title-text .title {
   font-family: "Inter", sans-serif;
@@ -1410,7 +1421,7 @@ header .container .bottom-menu .btn-login {
 }
 @media (min-width: 768px) {
   .crito-footer-top .container .content-top {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 1200px) {
