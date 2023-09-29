@@ -458,7 +458,16 @@ header {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
+            font-size: 5px;
         }
+
+        @media (min-width: 1024px) {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+            
         
         .content {
             padding-top: 20px;
@@ -1964,6 +1973,10 @@ header {
         bottom: 0;
         z-index: 1;
         width: 70%;
+
+        @media (min-width: 768px) {
+            width: 40%;
+        }
     }
 
     .container {
