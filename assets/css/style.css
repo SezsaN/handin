@@ -286,6 +286,7 @@ header .container .bottom-menu .btn-login {
   bottom: 0;
   left: 0;
   z-index: -1;
+  width: 50%;
 }
 .showcase .container {
   display: flex;
@@ -431,7 +432,7 @@ header .container .bottom-menu .btn-login {
   font-weight: 400;
   color: #F94D1C;
   margin-bottom: 20px;
-  margin-top: 90px;
+  margin-top: 50px;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -472,12 +473,13 @@ header .container .bottom-menu .btn-login {
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
-  margin-left: 180px;
+  margin-left: 100px;
 }
 @media (min-width: 768px) {
   .features .container .content-left .left-title a {
     padding: 15px 80px;
     margin-left: 100px;
+    margin-top: 90px;
   }
 }
 .features .container .content-left .left-title a i {
@@ -1150,15 +1152,23 @@ header .container .bottom-menu .btn-login {
   align-items: center;
   padding-bottom: 90px;
   font-size: 30px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .meet-our-team .container .section-title h2 {
     font-size: 45px;
     flex-direction: row;
+    text-align: start;
   }
 }
 .meet-our-team .container .section-title h2 a {
   background-color: #F9D783;
+  margin-top: 30px;
+}
+@media (min-width: 768px) {
+  .meet-our-team .container .section-title h2 a {
+    margin-top: 0;
+  }
 }
 .meet-our-team .container .section-title h2 a:hover {
   background-color: #191919;
@@ -1217,13 +1227,19 @@ header .container .bottom-menu .btn-login {
   }
 }
 .our-clients .box {
-  width: 110%;
-  height: 110%;
+  width: 100%;
+  height: 95%;
   background-color: #ffffff;
   position: absolute;
   top: 8%;
   left: -5%;
   z-index: -1;
+}
+@media (min-width: 768px) {
+  .our-clients .box {
+    width: 110%;
+    height: 110%;
+  }
 }
 .our-clients .container {
   position: relative;
@@ -1421,7 +1437,7 @@ header .container .bottom-menu .btn-login {
 }
 @media (min-width: 768px) {
   .crito-footer-top .container .content-top {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media (min-width: 1200px) {
@@ -1431,7 +1447,11 @@ header .container .bottom-menu .btn-login {
 }
 .crito-footer-top .container .content-top img {
   padding-bottom: 30px;
-  padding-right: 260px;
+}
+@media (min-width: 768px) {
+  .crito-footer-top .container .content-top img {
+    padding-right: 260px;
+  }
 }
 .crito-footer-top .container .content-top p {
   color: #A1A2A8;
@@ -1520,6 +1540,7 @@ header .container .bottom-menu .btn-login {
   left: 0;
   bottom: 0;
   z-index: 1;
+  width: 70%;
 }
 .lets-connect .container .connect {
   text-align: center;
@@ -1547,10 +1568,18 @@ header .container .bottom-menu .btn-login {
 
 .contact-information .container .information {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 20px;
   text-align: left;
-  padding-top: 120px;
+  padding-top: 50px;
+}
+@media (min-width: 1400px) {
+  .contact-information .container .information {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: left;
+    padding-top: 120px;
+  }
 }
 .contact-information .container .information a {
   position: absolute;
@@ -1595,23 +1624,44 @@ header .container .bottom-menu .btn-login {
 .contact-information .container .information .visit {
   position: relative;
   z-index: 0;
-  border: 1px solid #DAD9D3;
-  width: 420px;
-  height: 206px;
+  border: none;
+}
+@media (min-width: 1400px) {
+  .contact-information .container .information .visit {
+    position: relative;
+    z-index: 0;
+    border: 1px solid #DAD9D3;
+    width: 420px;
+    height: 206px;
+  }
 }
 .contact-information .container .information .call {
   position: relative;
   z-index: 0;
-  border: 1px solid #DAD9D3;
-  width: 420px;
-  height: 206px;
+  border: none;
+}
+@media (min-width: 1400px) {
+  .contact-information .container .information .call {
+    position: relative;
+    z-index: 0;
+    border: 1px solid #DAD9D3;
+    width: 420px;
+    height: 206px;
+  }
 }
 .contact-information .container .information .email {
   position: relative;
   z-index: 0;
-  border: 1px solid #DAD9D3;
-  width: 420px;
-  height: 206px;
+  border: none;
+}
+@media (min-width: 1400px) {
+  .contact-information .container .information .email {
+    position: relative;
+    z-index: 0;
+    border: 1px solid #DAD9D3;
+    width: 420px;
+    height: 206px;
+  }
 }
 
 .message-us .box {
@@ -1633,9 +1683,16 @@ header .container .bottom-menu .btn-login {
 }
 .message-us .container .title h2 {
   font-family: "DM Sans", sans-serif;
-  font-size: 45px;
+  font-size: 30px;
   font-weight: 700;
   margin: 0;
+}
+@media (min-width: 768px) {
+  .message-us .container .title h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0;
+  }
 }
 .message-us .container .user-information {
   padding-top: 20px;
@@ -1667,7 +1724,22 @@ header .container .bottom-menu .btn-login {
   justify-content: center;
   width: 80%;
   margin-top: 50px;
-  margin-left: 130px;
+  margin-left: 30px;
+}
+@media (min-width: 768px) {
+  .message-us .container a {
+    margin-left: 70px;
+  }
+}
+@media (min-width: 998px) {
+  .message-us .container a {
+    margin-left: 90px;
+  }
+}
+@media (min-width: 1400px) {
+  .message-us .container a {
+    margin-left: 130px;
+  }
 }
 
 .map iframe {
