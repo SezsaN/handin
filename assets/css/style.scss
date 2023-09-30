@@ -1572,24 +1572,25 @@ header {
     padding-bottom: 5rem;
 
     @media (min-width: 768px) {
-        padding-bottom: 13rem;
+        padding-bottom: 8rem;
     }
     
     .box {
-        width: 100%;
-        height: 95%;
+        
         background-color: #ffffff;
         position: absolute;
-       
-        top: 8%;
-        left: -5%;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
         z-index: -1;
 
-        @media (min-width: 768px) {
+        @media (min-width: 1920px) {
             width: 110%;
-            height: 110%;
+            height: 100%;
         }
-    }
+     }
       
        
 
