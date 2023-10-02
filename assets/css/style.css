@@ -1234,7 +1234,10 @@ header .container .bottom-menu .btn-login {
     padding-bottom: 8rem;
   }
 }
-.our-clients .box {
+.our-clients .container {
+  position: relative;
+}
+.our-clients .container .box {
   background-color: #ffffff;
   position: absolute;
   top: 55%;
@@ -1244,14 +1247,11 @@ header .container .bottom-menu .btn-login {
   height: 100%;
   z-index: -1;
 }
-@media (min-width: 1920px) {
-  .our-clients .box {
+@media (min-width: 1500px) {
+  .our-clients .container .box {
     width: 110%;
     height: 100%;
   }
-}
-.our-clients .container {
-  position: relative;
 }
 .our-clients .container .section-title {
   text-align: center;
@@ -1306,6 +1306,7 @@ header .container .bottom-menu .btn-login {
 .our-clients .container .center-content {
   margin-top: 70px;
 }
+
 .article-and-news .container .section-title p {
   padding-top: 120px;
 }
@@ -1520,6 +1521,7 @@ header .container .bottom-menu .btn-login {
 }
 .crito-footer-bottom .container .content-bottom .mobile {
   display: flex;
+  align-items: center;
 }
 @media (min-width: 768px) {
   .crito-footer-bottom .container .content-bottom .mobile {
@@ -1528,11 +1530,11 @@ header .container .bottom-menu .btn-login {
 }
 .crito-footer-bottom .container .content-bottom a {
   color: #A1A2A8;
-  margin: 10px;
+  margin-left: 10px;
 }
 @media (min-width: 768px) {
   .crito-footer-bottom .container .content-bottom a {
-    margin: 10px;
+    margin-left: 15px;
   }
 }
 .crito-footer-bottom .container .content-bottom a:hover {

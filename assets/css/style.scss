@@ -1575,28 +1575,30 @@ header {
         padding-bottom: 8rem;
     }
     
-    .box {
-        
-        background-color: #ffffff;
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        height: 100%;
-        z-index: -1;
 
-        @media (min-width: 1920px) {
-            width: 110%;
-            height: 100%;
-        }
-     }
       
        
 
  
     .container {
         position: relative;
+
+        .box {
+        
+            background-color: #ffffff;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+    
+            @media (min-width: 1500px) {
+                width: 110%;
+                height: 100%;
+            }
+         }
         
         .section-title {
             text-align: center;    
@@ -1660,9 +1662,7 @@ header {
         .center-content {
             margin-top: 70px;
             
-            a{
-
-            }
+          
         }
     }
 }
@@ -1935,6 +1935,7 @@ header {
 
             .mobile {
                 display: flex;
+                align-items: center;
 
                 @media (min-width: 768px) {
                     display: none;
@@ -1943,21 +1944,21 @@ header {
 
             a {
                color: #A1A2A8;
-               margin: 10px;
+               margin-left: 10px;
 
                @media (min-width: 768px) {
-                     margin: 10px;
+                     margin-left: 15px;
                }
 
                &:hover {
                 color: #DAD9D3; 
                }
             }
-
-
         }
     }
 }
+
+
                 
        
 // contact.html
